@@ -1,0 +1,29 @@
+/* popupStyles.css */
+.popup-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .popup-overlay.show {
+    opacity: 1;
+  }
+  
+  .popup-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    transition: transform 0.5s ease;
+  }
+  
+  .popup-overlay.show .popup-content {
+    transform: scale(1);
+  }
+  
